@@ -1,0 +1,94 @@
+.contenedor {
+  border: 5px solid #e1bee7;
+  background-color: white;
+  display: grid;
+
+  grid-template-rows: 40% 40%;
+  grid-auto-columns: 20%;
+  grid-auto-flow: column;
+  row-gap: 15px;
+  column-gap: 15px;
+}
+
+.contenedor-2 {
+  border: 5px solid #e1bee7;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+  grid-auto-columns: 45%;
+  grid-auto-flow: column;
+  gap: 20px;
+}
+
+.item {
+  border: 5px solid #00bcd4;
+  font-size: 2rem;
+}
+
+.contenedor-3 {
+  margin-top: 20px;
+  border: 5px solid #e1bee7;
+  background-color: white;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 150px 150px 150px;
+  grid-auto-rows: 150px;
+  justify-content: center;
+  align-content: center;
+  height: 600px;
+}
+
+.contenedor-4 {
+  margin-top: 20px;
+  border: 5px solid #e1bee7;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 75px 75px 75px;
+  place-content: center;
+  grid-template-areas:
+    'header header header'
+    'side main main'
+    'side main main';
+}
+.item-1 {
+  border: 5px solid blue;
+  font-size: 4rem;
+  grid-area: header;
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+}
+.item-2 {
+  border: 5px solid red;
+  font-size: 4rem;
+  grid-area: side;
+  /* grid-row: 2 /4; */
+}
+.item-3 {
+  border: 5px solid green;
+  font-size: 4rem;
+  grid-area: main;
+  /* grid-area: 2/2 /4 /4; */
+}
+
+.contenedor-5 {
+  margin-top: 20px;
+  border: 5px solid #e1bee7;
+  background-color: white;
+  display: grid;
+  grid-template-columns:
+    minmax(50px, 170px)
+    minmax(50px, 170px)
+    minmax(50px, 170px);
+}
+
+.contenedor-6 {
+  margin-top: 20px;
+  border: 5px solid #e1bee7;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 1fr);  todas ocupan el mismo espacio*/
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); las filas se ensanchan */
+  /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); agrega columnas fantasma */
+}
